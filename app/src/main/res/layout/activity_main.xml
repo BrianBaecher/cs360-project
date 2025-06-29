@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Main fragment content -->
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <!-- navbar -->
+    <LinearLayout
+        android:id="@+id/navbar"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:background="#ccc"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Navigation"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/inventoryBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:insetTop="@dimen/nav_btn_vert_inset"
+            android:insetBottom="@dimen/nav_btn_vert_inset"
+            android:text="Inventory"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/smsSettingsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:insetTop="@dimen/nav_btn_vert_inset"
+            android:insetBottom="@dimen/nav_btn_vert_inset"
+            android:text="SMS Settings"
+            app:cornerRadius="0dp" />
+
+        <TextView
+            android:id="@+id/userNameDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <!-- Toggle button -->
+    <Button
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hide"
+        app:layout_constraintStart_toEndOf="@id/navbar"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

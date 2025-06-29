@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Warehousing Helper</string>
+    <string name="sms_perm_denied_by_user">
+        You currently have SMS notifications disabled. You won\'t be updated when an item\'s stock is low.
+    </string>
+    <string name="sms_perm_granted_by_user">
+        You\'ve granted this app SMS permissions. You will be updated when an item\'s stock is low.
+    </string>
+    <string name="sms_change_warning">
+        The button below can only be used once per app installation. You have already used it. Now you have to go to app settings on your device to change SMS permissions.
+    </string>
+</resources>
